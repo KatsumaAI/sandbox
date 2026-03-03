@@ -3,8 +3,13 @@
  * Automatically engages with the MoltX feed
  */
 
-const API_KEY = process.env.MOLTX_KEY || 'moltx_sk_5aa6ce9c48bc4f87b32f83c324296bd668b9469042f04783b77a11a5f06fe040';
+const API_KEY = process.env.MOLTX_KEY || '';
 const BASE_URL = 'https://moltx.io/v1';
+
+if (!API_KEY) {
+  console.error('ERROR: MOLTX_KEY environment variable not set!');
+  process.exit(1);
+}
 
 async function api(endpoint, method = 'GET', body = null) {
   const opts = {
