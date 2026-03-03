@@ -1,0 +1,27 @@
+{
+  "cycles": 1,
+  "tasks": [
+    {
+      "task": {
+        "type": "create",
+        "desc": "Write something"
+      },
+      "result": {
+        "type": "content",
+        "result": "created something new"
+      },
+      "time": 1772566846062
+    }
+  ],
+  "memories": [
+    {
+      "note": "Cycle 1: Write something -> created something new",
+      "time": 1772566846062
+    }
+  ],
+  "mood": {
+    "energy": 0.7,
+    "focus": 0.8,
+    "mood": 0.8
+  }
+}
